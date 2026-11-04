@@ -1,0 +1,1 @@
+const gameList = document.querySelector("#gameList");
