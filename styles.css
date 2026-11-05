@@ -1,9 +1,18 @@
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: #7e7e7d;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #0b4566;
   color: white;
-  font-family: sans-serif;
+  font-family: "Audiowide", sans-serif;
+}
+
+th, td {
+    border: 2px solid #cccccc;
 }
 
 th {
@@ -15,6 +24,10 @@ th {
 td {
   padding: 10px;
   border-bottom: 1px solid #145980;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #1c7db6;
 }
 
 a {
