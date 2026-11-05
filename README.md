@@ -64,40 +64,33 @@ Esimerkki kuvan lisäämisestä:
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+**Ei tunnettuja virheitä.**
 
 ## Työn jakautuminen
 
-*Täytä tämä osio vain, jos teit projektin parityönä.*
+Ohjelman toteutuksesta vastasivat Juha Korhonen ja Jon Mattila. Työskentely aloitettiin suunnittelemalla ohjelman rautalankamalli PowerPointilla. Ohjelman koodaus toteutettiin Juhan tietokoneella, ja projektin Git-repositorio sijaitsee Juhan hallinnoimassa ympäristössä.
 
-Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
-
-- Tekijä 1: ...
-- Tekijä 2: ...
+Molemmat osapuolet osallistuivat aktiivisesti ohjelman kehittämiseen, ja työtehtävät jakautuivat tasaisesti tekijöiden kesken. Yhteistyö sujui hyvin ja ongelmitta koko projektin ajan. Ohjelmaa kehitettiin molempien vapaa-ajalla.
 
 ## Oma arvio ja oppimisen reflektointi
 
 Pohdi työtäsi ja oppimisprosessiasi.
 
-- Missä onnistuin?
-- Mikä oli haastavaa?
-- Mitä parantaisin, jos aikaa olisi enemmän?
-- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
-- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+- Missä onnistuin? Ohjelma toimii.
+- Mikä oli haastavaa? AJAX-koodi näyttää todella monimutkaiselta.
+- Mitä parantaisin, jos aikaa olisi enemmän? En mitään. It's perfect!
+- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta? Ei mitään mitä emme ennestään tienneet.
+- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää? Kaikki.
+- Oma arvio projektista: **10/10 pistettä**
 
 ## Lähteet ja kiitokset
 
-Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
-Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
-
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- Lopullinen työ on luotu opiskelijoiden ideasta.
+- Geminiä on ohjattu opiskelijoiden haluamaan suuntaan.
+- Käytetty hyväksi aikaisempia workshoppeja ja opiskelumateriaalia.
+- Font-familyt selvitettiin Google Font Familysta.
+- Käytetty Geminiä kommenttien jäsentelyyn.
+- API: www.freetogame.com/api-doc 
 
   ## Lisenssi
 
