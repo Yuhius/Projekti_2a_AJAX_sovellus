@@ -6,7 +6,7 @@
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+Sovellus näyttää 50 viimeisintä pelijulkaisua ja se on tarkoitettu niille ketä asia kiinnostaa.
 
 ### Suunnitellut toiminnot
 

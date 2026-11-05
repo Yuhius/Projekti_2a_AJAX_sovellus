@@ -1,38 +1,66 @@
-const gameList = document.querySelector("#gameList");
 const gameTableBody = document.querySelector("#gameTableBody");
+const searchInput = document.querySelector("#searchInput");
+const platformSelect = document.querySelector("#platformSelect");
+const genreSelect = document.querySelector("#genreSelect");
+const searchBtn = document.querySelector("#searchBtn");
 
-async function fetchLatestGames() {
+async function fetchGames() {
+  const platform = platformSelect.value;
+  const genre = genreSelect.value;
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  // Rakennetaan API-osoite valintojen mukaan
+  let url = "https://www.freetogame.com/api/games";
+  const params = [];
+
+  if (platform && platform !== "all") {
+    params.push(`platform=${platform}`);
+  }
+  if (genre) {
+    params.push(`category=${genre}`);
+  }
+
+  if (params.length > 0) {
+    url += "?" + params.join("&");
+  }
+
+  // Ilmoitetaan käyttäjälle latauksesta
+  gameTableBody.innerHTML = `<tr><td colspan="5">Haetaan pelejä...</td></tr>`;
+
   try {
-    const response = await fetch("https://www.freetogame.com/api/games");
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Verkkovirhe: ${response.status}`);
     }
-    const games = await response.json();
+    let games = await response.json();
+
+    // Suodatetaan vielä tekstikentän perusteella (pelin nimi)
+    if (searchTerm !== "") {
+      games = games.filter(game => game.title.toLowerCase().includes(searchTerm));
+    }
 
     // Järjestetään pelit julkaisupäivän mukaan uusimmasta vanhimpaan
     games.sort((a, b) => {
-      // Käsitellään tilanteet, joissa päivämäärä saattaa puuttua
       if (!a.release_date) return 1;
       if (!b.release_date) return -1;
       return new Date(b.release_date) - new Date(a.release_date);
     });
 
-    // Otetaan järjestetystä listasta 50 ensimmäistä (uusinta) peliä
+    // Otetaan 50 uusinta hakutuloksista
     const latestGames = games.slice(0, 50);
 
-    // Tyhjennetään taulukko ennen uutta sisältöä
+    // Tyhjennetään taulukko
     gameTableBody.innerHTML = "";
 
     if (latestGames.length === 0) {
-      gameTableBody.innerHTML = `<tr><td colspan="5">Ei pelijulkaisuja saatavilla.</td></tr>`;
+      gameTableBody.innerHTML = `<tr><td colspan="5">Hakuehdoilla ei löytynyt pelejä.</td></tr>`;
       return;
     }
 
-    // Luodaan rivit taulukkoon
+    // Luodaan rivit
     latestGames.forEach(game => {
       const row = document.createElement("tr");
 
-      // Muotoillaan julkaisupäivämäärä suomalaiseen muotoon DD.MM.YYYY
       let formattedDate = "-";
       if (game.release_date) {
         const releaseDate = new Date(game.release_date);
@@ -59,5 +87,8 @@ async function fetchLatestGames() {
   }
 }
 
-// Kutsutaan funktiota
-fetchLatestGames();
+// Tapahtumankuuntelijat – haku käynnistyy napista tai valintojen muuttuessa
+searchBtn.addEventListener("click", fetchGames);
+
+// Ensihaku sivun latautuessa
+fetchGames();

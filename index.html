@@ -3,33 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tulevat pelijulkaisut</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Sivun otsikko -->
-    <h1>Tulevat pelijulkaisut</h1>
+    <h1>Pelijulkaisut ja Haku</h1>
     
     <!-- Sivuston kuvaus -->
-    <p>Tällä sivustolla on listattuna 50 viimeisintä pelijulkaisua. Sivusto päivittää tietonsa sen nykyisen päivän mukaan.
-        Sivustolla on linkit jokaiseen peliin.
-    </p>
+    <p>Tällä sivustolla voit hakea ja suodattaa ilmaispelejä eri kriteereillä.</p>
 
-<!-- Luo taulukon otsikkorivin. -->
+    <!-- Haku- ja suodatusosio -->
+    <div id="controls" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+        <div>
+            <label for="searchInput">Hae nimellä:</label>
+            <input type="text" id="searchInput" placeholder="Esim. Overwatch...">
+        </div>
+
+        <div>
+            <label for="platformSelect">Alusta:</label>
+            <select id="platformSelect">
+                <option value="all">Kaikki</option>
+                <option value="pc">PC</option>
+                <option value="browser">Selain</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="genreSelect">Genre:</label>
+            <select id="genreSelect">
+                <option value="">Kaikki genret</option>
+                <option value="mmorpg">MMORPG</option>
+                <option value="shooter">Shooter</option>
+                <option value="strategy">Strategy</option>
+                <option value="moba">MOBA</option>
+                <option value="racing">Racing</option>
+                <option value="sports">Sports</option>
+                <option value="social">Social</option>
+                <option value="sandbox">Sandbox</option>
+            </select>
+        </div>
+
+        <button id="searchBtn">Hae</button>
+    </div>
+
+    <!-- Taulukko -->
     <div id="gameList">
         <table>
             <thead>
-            <tr>
-                <th>Kuva</th>
-                <th>Nimi</th>
-                <th>Genre</th>
-                <th>Kehittäjä</th>
-                <th>Julkaisupäivä</th>
-            </tr>
+                <tr>
+                    <th>Kuva</th>
+                    <th>Nimi</th>
+                    <th>Genre</th>
+                    <th>Kehittäjä</th>
+                    <th>Julkaisupäivä</th>
+                </tr>
             </thead>
-            <!-- Tämän sisälle luodaan JavaScriptillä taulukko. -->
             <tbody id="gameTableBody"></tbody>
         </table>
     </div>
