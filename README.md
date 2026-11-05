@@ -12,9 +12,9 @@ Sovellus näyttää 50 viimeisintä pelijulkaisua ja se on tarkoitettu niille ke
 
 Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Näyttää sivun auetessa 50 viimeisintä pelijulkaisua.
+- Käyttäjä voi hakea pelejä hakutoiminnolla.
+- Käyttäjä voi siirtyä pelin sivulle linkistä.
 
 ### Rautalankamalli / luonnos
 
@@ -22,11 +22,11 @@ Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovell
 
 Esimerkki kuvan lisäämisestä:
 
-![Rautalankamalli](img/wireframe.png)
+![Rautalankamalli](/images/rautalankamalli.jpg)
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
+- **Julkaistu sovellus:** https://yuhius.github.io/Projekti_2a_AJAX_sovellus/index.html
 - **GitHub-repositorio:** https://github.com/Yuhius/Projekti_2a_AJAX_sovellus
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
