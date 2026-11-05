@@ -6,7 +6,7 @@
 
 ### Projektin idea
 
-Sovellus näyttää 50 viimeisintä pelijulkaisua ja se on tarkoitettu niille ketä asia kiinnostaa.
+Sovellus näyttää 50 viimeisintä pelijulkaisua avatessa ja käyttäjä voi hakea pelejä käyttämällä hakutoimintoja.
 
 ### Suunnitellut toiminnot
 
@@ -18,10 +18,6 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 ### Rautalankamalli / luonnos
 
-Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovelluksen luonnoksesta. Luonnoksessa tulee näkyä sovelluksen pääasiallinen näkymä ja tärkeimmät elementit.
-
-Esimerkki kuvan lisäämisestä:
-
 ![Rautalankamalli](/images/rautalankamalli.jpg)
 
 ## Verkkolinkit
@@ -32,7 +28,7 @@ Esimerkki kuvan lisäämisestä:
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
+**Pelijulkaisut** on verkkosovellus, joka näyttää pelit freetogame-sivustolta hakemalla rajapintoja.
 
 Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
 
@@ -43,16 +39,14 @@ Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
 - JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
 
 ## Sovelluksen käyttö
 
 Kirjoita lyhyet käyttöohjeet sovellukselle.
 
 1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+2. Täytä lomakkeen kentät ja valitse alasvetovalikoista.
+3. Paina Hae-nappia.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -66,7 +60,7 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
 
 Esimerkki kuvan lisäämisestä:
 
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+![Kuvakaappaus sovelluksesta](images/screenshot.png)
 
 ## Tunnetut virheet / puutteet
 
