@@ -24,7 +24,7 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 - **Julkaistu sovellus:** https://yuhius.github.io/Projekti_2a_AJAX_sovellus/index.html
 - **GitHub-repositorio:** https://github.com/Yuhius/Projekti_2a_AJAX_sovellus
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **Projektin videoesittely:** https://video.laurea.fi/media/Projekti2a+Videodemo%2C+Juha+Korhonen+Jon+Mattila/0_yq457j4w
 
 ## Tietoja sovelluksesta
 
