@@ -9,12 +9,15 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Sivun otsikko -->
     <h1>Tulevat pelijulkaisut</h1>
     
+    <!-- Sivuston kuvaus -->
     <p>Tällä sivustolla on listattuna 50 viimeisintä pelijulkaisua. Sivusto päivittää tietonsa sen nykyisen päivän mukaan.
         Sivustolla on linkit jokaiseen peliin.
     </p>
 
+<!-- Luo taulukon otsikkorivin. -->
     <div id="gameList">
         <table>
             <thead>
@@ -26,6 +29,7 @@
                 <th>Julkaisupäivä</th>
             </tr>
             </thead>
+            <!-- Tämän sisälle luodaan JavaScriptillä taulukko. -->
             <tbody id="gameTableBody"></tbody>
         </table>
     </div>

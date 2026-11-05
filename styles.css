@@ -1,8 +1,10 @@
+/* Taustan väri ja fontti */
 body {
     font-family: "Audiowide", sans-serif;
     background-color: #7e7e7d;
 }
 
+/* Taulukon tyyli */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -11,25 +13,30 @@ table {
   font-family: "Audiowide", sans-serif;
 }
 
+/* Otsikkorivin ja sarakkeiden tyyli */
 th, td {
     border: 2px solid #cccccc;
 }
 
+/* Otsikkorivin tyyli */
 th {
   background-color: #000;
   text-align: left;
   padding: 10px;
 }
 
+/* Sarakkeiden tyyli */
 td {
   padding: 10px;
   border-bottom: 1px solid #145980;
 }
 
+/* Parillisten rivien tyyli */
 tbody tr:nth-child(even) {
     background-color: #1c7db6;
 }
 
+/* Linkkien tyyli */
 a {
   color: #fff;
 }
